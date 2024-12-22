@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include <math.h>
 
 int main()
 {
-    int a,b, pot = 1;
+    int a,b,pot = 1;
 
     printf("Digite o primeiro numero: ");
     scanf("%d",&a);
@@ -13,7 +14,8 @@ int main()
     {
         pot = pot * a; 
         
+    printf("Iteracao %d: %d\n", i, pot);
     }
-    printf("Resultado %.2lf\n",pot);
+    printf("Resultado final: %d^%d = %d\n", a, b, pot);
     return 0;
 }
