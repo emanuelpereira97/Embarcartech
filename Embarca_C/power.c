@@ -11,8 +11,9 @@ int main()
 
     for (int i=1; i<= b; i++)
     {
-        pot = pot * a;
+        pot = pot * a; 
+        
     }
-
-    printf("&d",a);
+    printf("Resultado %.2lf\n",pot);
+    return 0;
 }

@@ -4,18 +4,17 @@
         {
             "label": "Compilar",
             "type": "shell",
-            "command": "g++",
+            "command": "gcc",
             "args": [
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}.exe"
+                "${fileDirname}/${fileBasenameNoExtension}_out.exe"
             ],
             "group": "build",
             "problemMatcher": [
                 "$gcc"
-            ],
-            "detail": "Compila o programa usando o g++"
+            ]
         },
         {
             "type": "cppbuild",
